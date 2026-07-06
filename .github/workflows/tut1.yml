@@ -1,0 +1,16 @@
+name: Tutorial01
+on: push
+  branches:[ main ] 
+
+workflow_dispatch: {}
+
+
+jobs:
+  Say-Hello:
+   runs-on: ubuntu-latest
+   steps:
+     - name: print-hello
+       run: echo "Hello"
+     - name: say Bye
+       run: echo "bye"
+  
